@@ -1,0 +1,3 @@
+rle implements run-length encoding for the compression of files. You must use the read() and write() system calls to read the input file and write to the output file.
+
+Run-length encoding is a compression technique that identifies "runs" of repeated characters and represents these compactly. The length of each run is counted, and the base is stored along with the number of repetitions of that basis. For example, the string AAABBBBBB consists of nine bytes, but it could be instead represented as 3A6B, where "A" and "B" are the basis of each run and the numbers give how many times each base is repeated. This represents the 9-byte source as a compressed 4-byte string, a data size ratio of 55.6%.
